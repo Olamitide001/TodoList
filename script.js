@@ -29,15 +29,18 @@ function addTodo(event){
     const remove = document.createElement('p')
     remove.classList.add('circle')
     trash.appendChild(remove)
+    document.querySelector(".circle").textContent = "X"
     todoInput.value = ""
 
 mark.addEventListener('click', function(){
     newTodo.style.textDecoration = "line-through"
     newTodo.style.background ="grey"
+    document.querySelector(".square").textContent = "+"
 })
 mark.addEventListener('dblclick', function(){
     newTodo.style.textDecoration = "none"
     newTodo.style.background ="white"
+    document.querySelector(".square").textContent = ""
 })
 trash.addEventListener('click', function(){
     newTodo.style.display = "none"
