@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: saddlebrown;
+    background-color: blueviolet;
     color: white;
     font-family: "poppins" sans-serif;
     min-height: 100vh;
@@ -47,7 +47,7 @@ form button i{
 .todo-container{
     margin: 0 auto;
     /* border: 2px solid red; */
-    width: 400px;
+    max-width: 400px;
     height:300px ;
     margin-top: 2rem;
     overflow:wrap;
@@ -58,7 +58,7 @@ form button i{
     align-items: center;
     background: white;
     color: black;
-    border-radius:22px ;
+    border-radius:23px ;
     min-height: 3rem;
     font-size: 1.5rem;
     overflow-wrap: normal;
@@ -66,6 +66,17 @@ form button i{
 }
 .item-list{
     margin-left: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 3rem;
+    /* border: 1px solid red; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: -2px;
 }
 .mark, .delete{
     height: 3rem;
@@ -79,14 +90,11 @@ form button i{
     border-bottom-right-radius: 20px;
     background: rgb(115,115,115);
     color: white;
-    position: absolute;
-    right: 432px;
+    
 }
 .mark{
     background: rgb(255,200,0);
     color: white;
-    position: absolute;
-    right: 480px;  
 }
 .circle{
     height: 1.5rem;
