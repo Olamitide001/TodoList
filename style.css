@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    color: white;
+    font-family: "poppins" sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+form input, form button{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+form button{
+    color: rgb(255,200,0);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 1rem;
+}
+form button:hover{
+    color: white;
+    background: rgb(255,200,0);
+}
+form button i{
+   /* margin-left: -5px; */
+   margin-right: 7px;
+}
+.todo-container{
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    width: 400px;
+    height:300px ;
+    margin-top: 2rem;
+    overflow:wrap;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: black;
+    border-radius:22px ;
+    min-height: 3rem;
+    font-size: 1.5rem;
+    overflow-wrap: normal;
+    margin-top: 0.2rem;
+}
+.item-list{
+    margin-left: 1rem;
+}
+.mark, .delete{
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+.delete{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgb(115,115,115);
+    color: white;
+    position: absolute;
+    right: 432px;
+}
+.mark{
+    background: rgb(255,200,0);
+    color: white;
+    position: absolute;
+    right: 480px;  
+}
+.circle{
+    height: 1.5rem;
+    width: 1.5rem;
+    background: white;
+    border-radius: 50%;
+    margin: auto;
+    color: black;
+}
+.square{
+    height: 1.5rem;
+    width: 1.5rem;
+    background: white;
+    margin: auto;
+}
